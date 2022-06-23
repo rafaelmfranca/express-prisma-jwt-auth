@@ -1,3 +1,4 @@
+import bcrypt from 'bcryptjs';
 import prisma from '../src/lib/prisma';
 
 async function main() {
@@ -7,6 +8,7 @@ async function main() {
     create: {
       email: 'alice@prisma.io',
       name: 'Alice',
+      password: bcrypt.hashSync('password', 8),
       posts: {
         create: {
           title: 'Check out Prisma with Next.js',
@@ -23,6 +25,7 @@ async function main() {
     create: {
       email: 'bob@prisma.io',
       name: 'Bob',
+      password: bcrypt.hashSync('password', 8),
       posts: {
         create: [
           {

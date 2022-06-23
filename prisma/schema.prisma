@@ -26,9 +26,10 @@ model Profile {
 }
 
 model User {
-  id      Int      @id @default(autoincrement())
-  email   String   @unique
-  name    String?
-  posts   Post[]
-  profile Profile?
+  id       Int      @id @default(autoincrement())
+  email    String   @unique
+  password String   @db.VarChar(255)
+  name     String?
+  posts    Post[]
+  profile  Profile?
 }
