@@ -2,8 +2,10 @@ lockfileVersion: 5.4
 
 specifiers:
   '@prisma/client': ^3.15.2
+  '@types/bcryptjs': ^2.4.2
   '@types/express': ^4.17.13
   '@types/node': ^18.0.0
+  bcryptjs: ^2.4.3
   express: ^4.18.1
   express-rescue: ^1.1.31
   http-status-codes: ^2.2.0
@@ -14,11 +16,13 @@ specifiers:
 
 dependencies:
   '@prisma/client': 3.15.2_prisma@3.15.2
+  bcryptjs: 2.4.3
   express: 4.18.1
   express-rescue: 1.1.31
   http-status-codes: 2.2.0
 
 devDependencies:
+  '@types/bcryptjs': 2.4.2
   '@types/express': 4.17.13
   '@types/node': 18.0.0
   nodemon: 2.0.16
@@ -99,6 +103,10 @@ packages:
 
   /@tsconfig/node16/1.0.3:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
+    dev: true
+
+  /@types/bcryptjs/2.4.2:
+    resolution: {integrity: sha512-LiMQ6EOPob/4yUL66SZzu6Yh77cbzJFYll+ZfaPiPPFswtIlA/Fs1MzdKYA7JApHU49zQTbJGX3PDmCpIdDBRQ==}
     dev: true
 
   /@types/body-parser/1.19.2:
@@ -226,6 +234,10 @@ packages:
   /balanced-match/1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
+
+  /bcryptjs/2.4.3:
+    resolution: {integrity: sha512-V/Hy/X9Vt7f3BbPJEi8BdVFMByHi+jNXrYkW3huaybV/kQ0KJg0Y6PkEMbn+zeT+i+SiKZ/HMqJGIIt4LZDqNQ==}
+    dev: false
 
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
